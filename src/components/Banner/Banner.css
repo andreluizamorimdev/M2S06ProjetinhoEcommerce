@@ -1,0 +1,25 @@
+.banner-container-box {
+    display: flex;
+    flex-direction: column;
+    padding: 42px 20px;
+    background: var(--bg-color-3);
+}
+
+.banner-container-box .descricao-box p {
+    font-family: var(--font);
+    font-size: var(--fz-paragrafos);
+    text-transform: uppercase;
+    color: var(--text-color-2);
+}
+
+.banner-container-box .titulo-box h1 {
+    font-family: var(--font);
+    font-size: var(--fz-titulo);
+    color: var(--text-color-1);
+}
+
+.banner-container-box .titulo-box h1 span.cor-ponto {
+    color: var(--bg-color-6);
+    font-size: 60px;
+    margin-left: -13px;
+}

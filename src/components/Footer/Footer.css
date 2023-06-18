@@ -1,0 +1,40 @@
+.footer-box {
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    color: var(--text-color-1);
+}
+
+.footer-box .row-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.footer-box .row-box .container-box .conteudo-box p {
+    margin-top: 10px;
+}
+
+.footer-box .row-box .container-box .conteudo-box .info-box li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-box .row-box .container-box .conteudo-box .info-box li a {
+    text-decoration: none;
+    color: var(--text-color-1);
+}
+
+.footer-box .copyright-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
