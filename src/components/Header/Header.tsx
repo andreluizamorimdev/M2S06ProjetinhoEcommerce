@@ -1,3 +1,4 @@
+import IMenu from "../../shared/interfaces/IMenu";
 import "./Header.css";
 
 const Header = () => {
@@ -20,13 +21,7 @@ const Header = () => {
 
   ];
 
-  type itensMenu = {
-      id: number,
-      label: string,
-      path?: string
-  }
-
-  const renderMenuItem = (menuItem : itensMenu) => {
+  const renderMenuItem = (menuItem : IMenu) => {
     return (
       <li key={menuItem.id}><a href={menuItem.path}>{menuItem.label}</a></li>
     )
