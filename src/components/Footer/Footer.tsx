@@ -7,6 +7,11 @@ const Footer = () => {
                 <div className='row-box'>
                     <div className='logo-box'>
                         <h1>DevDede</h1>
+                        <div className='social-box'>
+                            <a href="https://www.instagram.com/" target='_blank'><i className="fa-brands fa-instagram fa-2xl" style={{color: "#fff"}}></i></a>
+                            <a href="https://www.facebook.com/" target='_blank'><i className="fa-brands fa-square-facebook fa-2xl" style={{color: "#fff"}}></i></a>
+                            <a href="https://www.youtube.com/" target='_blank'><i className="fa-brands fa-youtube fa-2xl" style={{color: "#fff"}}></i></a>
+                        </div>
                     </div>
                     <div className='container-box'>
                         <div className='titulo-box'>
@@ -16,10 +21,10 @@ const Footer = () => {
                             <p>+55 48 9999-9999</p>
                             <p>contato@devdede.com</p>
                         </div>
-                        <div className='social-box'>
-                            <a href=""><div className='instagram-icon'></div></a>
-                            <a href=""><div className='facebook-icon'></div></a>
-                            <a href=""><div className='youtube-icon'></div></a>
+                        <div className='line-separation'></div>
+                        <div className='conteudo-box'>
+                            <p>Rua teste dos testes, 2000 - testando</p>
+                            <p>São josé - SC</p>
                         </div>
                     </div>
                     <div className='container-box'>
@@ -28,9 +33,8 @@ const Footer = () => {
                         </div>
                         <div className='conteudo-box'>
                             <ul className='info-box'>
-                                <li><a href="">Camisetas</a></li>
-                                <li><a href="">Moletons</a></li>
-                                <li><a href="">Quadros</a></li>
+                                <li><a href="">Produtos</a></li>
+                                <li><a href="">Contato</a></li>
                             </ul>
                         </div>
                     </div>

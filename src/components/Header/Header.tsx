@@ -5,18 +5,13 @@ const Header = () => {
   const menu = [
     {
       id: 1,
-      label: 'Camisetas',
-      path: '/Camisetas'
+      label: 'Produtos',
+      path: '/produtos'
     },
     {
       id: 2,
-      label: 'Moletons',
-      path: '/Moletons'
-    },
-    {
-      id: 3,
-      label: 'Quadros',
-      path: '/Quadros'
+      label: 'Contato',
+      path: '/contato'
     },
 
   ];
