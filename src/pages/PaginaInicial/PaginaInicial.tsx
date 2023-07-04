@@ -6,7 +6,7 @@ const PaginaInicial = () => {
     return (
         <>
             <Header />
-            <Banner descricao='Ao nosso ecommerce' titulo='Bem Vindo' />
+            <Banner descricao='Ao nosso ecommerce seja' titulo='Bem Vindo' />
 
             <Footer />
         </>
