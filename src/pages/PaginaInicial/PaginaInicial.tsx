@@ -1,14 +1,14 @@
-import Header from "../../components/Header/Header";
-import Banner from "../../components/Banner/Banner";
-import Footer from "../../components/Footer/Footer";
+import HeaderComponent from "../../components/HeaderComponent/HeaderComponent";
+import BannerComponent from "../../components/BannerComponent/BannerComponent";
+import FooterComponent from "../../components/FooterComponent/FooterComponent";
 
 const PaginaInicial = () => {
     return (
         <>
-            <Header />
-            <Banner descricao='Ao nosso ecommerce seja' titulo='Bem Vindo' />
+            <HeaderComponent />
+            <BannerComponent descricao='Ao nosso ecommerce seja' titulo='Bem Vindo' />
 
-            <Footer />
+            <FooterComponent />
         </>
     )
 }

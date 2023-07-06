@@ -1,11 +1,11 @@
-import "./Banner.css";
+import "./BannerComponent.css";
 
 type propsBanner = {
     descricao: string,
     titulo: string
 }
 
-const Banner = ({descricao, titulo} : propsBanner) => {
+const BannerComponent = ({descricao, titulo} : propsBanner) => {
     return (
         <div className="banner-container-box">
             <div className="descricao-box">
@@ -18,4 +18,4 @@ const Banner = ({descricao, titulo} : propsBanner) => {
     )
 }
 
-export default Banner;
+export default BannerComponent;

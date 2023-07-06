@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import IMenu from "../../shared/interfaces/IMenu";
-import "./Header.css";
+import "./HeaderComponent.css";
 
-const Header = () => {
+const HeaderComponent = () => {
   const menu = [
     {
       id: 1,
@@ -42,4 +42,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComponent;

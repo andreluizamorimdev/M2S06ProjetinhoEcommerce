@@ -1,7 +1,7 @@
 import IProduto from '../../shared/interfaces/IProduto';
-import './ProdutoCard.css';
+import './ProdutoCardComponent.css';
 
-const ProdutoCard = ({id, image, nome, valor, descricao, caracteristicas}: IProduto) => {
+const ProdutoCardComponent = ({id, image, nome, valor, descricao, caracteristicas}: IProduto) => {
     return (
         <div key={id} className="card mb-3 mt-3" style={{minWidth: "540px"}}>
                 <div className="row g-0">
@@ -23,4 +23,4 @@ const ProdutoCard = ({id, image, nome, valor, descricao, caracteristicas}: IProd
     )
 }
 
-export default ProdutoCard;
+export default ProdutoCardComponent;

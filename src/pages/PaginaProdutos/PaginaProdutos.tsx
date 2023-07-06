@@ -1,15 +1,15 @@
-import Header from "../../components/Header/Header";
-import Banner from "../../components/Banner/Banner";
-import ListaProdutos from "../../components/ListaProdutos/ListaProdutos";
-import Footer from "../../components/Footer/Footer";
+import HeaderComponent from "../../components/HeaderComponent/HeaderComponent.tsx";
+import BannerComponent from "../../components/BannerComponent/BannerComponent.tsx";
+import ListaProdutosComponent from "../../components/ListaProdutosComponent/ListaProdutosComponent.tsx";
+import FooterComponent from "../../components/FooterComponent/FooterComponent.tsx";
 
 const PaginaProdutos = () => {
     return (
         <>
-            <Header />
-            <Banner descricao='Especialmente feito para você' titulo='nossos produtos' />
-            <ListaProdutos />
-            <Footer />
+            <HeaderComponent />
+            <BannerComponent descricao='Especialmente feito para você' titulo='nossos produtos' />
+            <ListaProdutosComponent />
+            <FooterComponent />
         </>
     )
 }
