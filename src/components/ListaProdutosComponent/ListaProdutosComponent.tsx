@@ -6,15 +6,15 @@ const ListaProdutosComponent = () => {
     const produtos: Array<IProduto> = [
         {
             id: 1,
-            image: '',
-            nome: "teste",
-            valor: 25,
-            descricao: "testando",
-            caracteristicas: ["teste", "teste"]
+            image: 'https://i.imgur.com/Dy9Ytht.png',
+            nome: "Quadro Personagem",
+            valor: 35,
+            descricao: "Quadro personagem em estilo anime, caminhando por uma estrada onde flores de cerejeira caem de suas arvores.",
+            caracteristicas: ["#quadro", "#personagem-anime", "#sakura"]
         },
         {
             id: 2,
-            image: '',
+            image: 'https://i.imgur.com/Dy9Ytht.png',
             nome: "teste",
             valor: 25,
             descricao: "testando",
@@ -22,7 +22,7 @@ const ListaProdutosComponent = () => {
         },
         {
             id: 3,
-            image: '',
+            image: 'https://i.imgur.com/Dy9Ytht.png',
             nome: "teste",
             valor: 25,
             descricao: "testando",
@@ -30,7 +30,7 @@ const ListaProdutosComponent = () => {
         },
         {
             id: 4,
-            image: '',
+            image: 'https://i.imgur.com/Dy9Ytht.png',
             nome: "teste",
             valor: 25,
             descricao: "testando",
@@ -38,7 +38,7 @@ const ListaProdutosComponent = () => {
         },
         {
             id: 5,
-            image: '',
+            image: 'https://i.imgur.com/Dy9Ytht.png',
             nome: "teste",
             valor: 25,
             descricao: "testando",
@@ -46,7 +46,7 @@ const ListaProdutosComponent = () => {
         },
         {
             id: 6,
-            image: '',
+            image: 'https://i.imgur.com/Dy9Ytht.png',
             nome: "teste",
             valor: 25,
             descricao: "testando",
@@ -56,11 +56,13 @@ const ListaProdutosComponent = () => {
 
     const render = (produtos: Array<IProduto>) => {
         return (
-            <ul className='lista-produtos'>
-                {
-                    produtos.map((produto: IProduto) => {return <li key={produto.id}><ProdutoCardComponent id={produto.id} image={produto.image} nome={produto.nome} valor={produto.valor} descricao={produto.descricao} caracteristicas={produto.caracteristicas} /></li>})
-                }
-            </ul>
+            <div className="lista-produtos">
+                <ul>
+                    {
+                        produtos.map((produto: IProduto) => {return <li key={produto.id}><ProdutoCardComponent id={produto.id} image={produto.image} nome={produto.nome} valor={produto.valor} descricao={produto.descricao} caracteristicas={produto.caracteristicas} /></li>})
+                    }
+                </ul>
+            </div>
         )
     }
 

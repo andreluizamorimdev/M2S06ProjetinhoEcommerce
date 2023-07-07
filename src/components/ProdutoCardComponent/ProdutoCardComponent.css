@@ -1,3 +1,6 @@
+.card .row.g-0 .col-md-8 .card-body .btn {
+    width: 20rem;
+}
 .card .row.g-0 .col-md-8 .card-body .btn-primary {
     background-color: var(--bg-color);
     border: 1px solid var(--bg-color);
