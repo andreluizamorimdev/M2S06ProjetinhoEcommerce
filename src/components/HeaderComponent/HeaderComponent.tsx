@@ -1,15 +1,21 @@
+import { Link } from "react-router-dom";
 import IMenu from "../../shared/interfaces/IMenu";
-import "./Header.css";
+import "./HeaderComponent.css";
 
-const Header = () => {
+const HeaderComponent = () => {
   const menu = [
     {
       id: 1,
+      label: 'Home',
+      path: '/'
+    },
+    {
+      id: 2,
       label: 'Produtos',
       path: '/produtos'
     },
     {
-      id: 2,
+      id: 3,
       label: 'Contato',
       path: '/contato'
     },
@@ -18,7 +24,7 @@ const Header = () => {
 
   const renderMenuItem = (menuItem : IMenu) => {
     return (
-      <li key={menuItem.id}><a href={menuItem.path}>{menuItem.label}</a></li>
+      <li key={menuItem.id}><Link to={menuItem.path}>{menuItem.label}</Link></li>
     )
   }
   return (
@@ -36,4 +42,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComponent;
