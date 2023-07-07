@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import PaginaInicial from './pages/PaginaInicial/PaginaInicial.tsx';
 import PaginaProdutos from './pages/PaginaProdutos/PaginaProdutos.tsx';
 import PaginaContato from './pages/PaginaContato/PaginaContato.tsx';

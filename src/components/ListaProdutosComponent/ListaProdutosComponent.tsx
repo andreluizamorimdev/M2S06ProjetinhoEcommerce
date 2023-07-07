@@ -54,12 +54,12 @@ const ListaProdutosComponent = () => {
         }
     ];
 
-    const render = (produtos: Array<IProduto>) => {
+    const render = () => {
         return (
             <div className="lista-produtos">
                 <ul>
                     {
-                        produtos.map((produto: IProduto) => {return <li key={produto.id}><ProdutoCardComponent id={produto.id} image={produto.image} nome={produto.nome} valor={produto.valor} descricao={produto.descricao} caracteristicas={produto.caracteristicas} /></li>})
+                        produtos.map((produto: IProduto) => {return <li key={produto.id}><ProdutoCardComponent image={produto.image} nome={produto.nome} valor={produto.valor} descricao={produto.descricao} caracteristicas={produto.caracteristicas} /></li>})
                     }
                 </ul>
             </div>
@@ -69,7 +69,7 @@ const ListaProdutosComponent = () => {
     return(
         <div>
             
-            {render(produtos)}
+            {render()}
             
         </div>
     )
