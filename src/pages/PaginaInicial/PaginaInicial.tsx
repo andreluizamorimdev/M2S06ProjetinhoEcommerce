@@ -5,10 +5,10 @@ import BannerComponent from "../../components/BannerComponent/BannerComponent";
 import FooterComponent from "../../components/FooterComponent/FooterComponent";
 
 const PaginaInicial = () => {
-    const { setBanner } = useContext(BannerContext);
+    const { setBannerData } = useContext(BannerContext);
 
     useEffect(() => {
-        setBanner({
+        setBannerData({
             titulo: "Bem Vindo",
             subtitulo: "Ao nosso ecommerce seja",
         })

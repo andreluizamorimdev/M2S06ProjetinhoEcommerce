@@ -3,11 +3,11 @@ import { IBannerContextData } from "../../shared/interfaces/IBannerContextData";
 import { IBanner } from "../../shared/interfaces/IBanner";
 
 const defaultState = {
-    banner: {
+    bannerData: {
         titulo: "",
         subtitulo: ""
     },
-    setBanner: () => {/*do nothing.*/}
+    setBannerData: () => {/*do nothing.*/}
 } as IBannerContextData;
 
 export const BannerContext = createContext(defaultState);
@@ -18,12 +18,12 @@ type BannerProviderProps = {
 
 export const BannerProvider = ({children}: BannerProviderProps) => {
     const [banner, setBanner] = useState<IBanner>({
-        titulo: "",
-        subtitulo: ""
+        titulo: "Bem Vindo",
+        subtitulo: "Ao nosso ecommerce seja",
     });
 
     return(
-        <BannerContext.Provider value={{banner, setBanner}}>
+        <BannerContext.Provider value={{bannerData: banner, setBannerData: setBanner}}>
             {children}
         </BannerContext.Provider>
     )
