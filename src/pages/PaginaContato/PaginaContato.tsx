@@ -1,14 +1,26 @@
+import { useContext, useEffect } from "react";
+import { BannerContext } from "../../contexts/BannerContext/BannerContext";
+
+import HeaderComponent from "../../components/HeaderComponent/HeaderComponent";
 import BannerComponent from "../../components/BannerComponent/BannerComponent";
 import CardContatoComponent from "../../components/CardContatoComponent/CardContatoComponent";
-import FooterComponent from "../../components/FooterComponent/FooterComponent";
 import FormularioComponent from "../../components/FormularioComponent/FormularioComponent";
-import HeaderComponent from "../../components/HeaderComponent/HeaderComponent";
+import FooterComponent from "../../components/FooterComponent/FooterComponent";
 
 const PaginaContato = () => {
+    const { setBanner } = useContext(BannerContext);
+
+    useEffect(() => {
+        setBanner({
+            titulo: "Nossa equipe",
+            subtitulo: "Entre em Contato com",
+        })
+    }, []);
+    
     return (
         <>
             <HeaderComponent />
-            <BannerComponent descricao='Entre em Contato com' titulo='nossa equipe' />
+            <BannerComponent />
             <FormularioComponent />
             <CardContatoComponent />
             <FooterComponent />
