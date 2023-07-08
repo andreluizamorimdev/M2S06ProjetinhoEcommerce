@@ -3,14 +3,14 @@ import { BannerContext } from "../../contexts/BannerContext/BannerContext";
 import "./BannerComponent.css";
 
 const BannerComponent = () => {
-    const { banner } = useContext(BannerContext)
+    const { bannerData } = useContext(BannerContext)
     return (
         <div className="banner-container-box">
             <div className="descricao-box">
-                <p>{banner.subtitulo}</p>
+                <p>{bannerData.subtitulo}</p>
             </div>
             <div className="titulo-box">
-                <h1>{banner.titulo} <span className="cor-ponto">.</span></h1>
+                <h1>{bannerData.titulo} <span className="cor-ponto">.</span></h1>
             </div>
         </div>
     )

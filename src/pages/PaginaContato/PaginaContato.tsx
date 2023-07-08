@@ -8,10 +8,10 @@ import FormularioComponent from "../../components/FormularioComponent/Formulario
 import FooterComponent from "../../components/FooterComponent/FooterComponent";
 
 const PaginaContato = () => {
-    const { setBanner } = useContext(BannerContext);
+    const { setBannerData } = useContext(BannerContext);
 
     useEffect(() => {
-        setBanner({
+        setBannerData({
             titulo: "Nossa equipe",
             subtitulo: "Entre em Contato com",
         })

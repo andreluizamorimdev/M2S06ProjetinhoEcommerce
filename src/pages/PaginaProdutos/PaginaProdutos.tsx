@@ -6,10 +6,10 @@ import ListaProdutosComponent from "../../components/ListaProdutosComponent/List
 import FooterComponent from "../../components/FooterComponent/FooterComponent.tsx";
 
 const PaginaProdutos = () => {
-    const { setBanner } = useContext(BannerContext);
+    const { setBannerData } = useContext(BannerContext);
 
     useEffect(() => {
-        setBanner({
+        setBannerData({
             titulo: "Nossos produtos",
             subtitulo: "Especialmente feito para você",
         })
